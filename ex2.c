@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 int main(){
-
 	int kilometers, suitcases;
 	double basefare, luggageCost, total;
 	printf("How many kilometers were travelled?");
@@ -14,4 +14,7 @@ int main(){
 	printf("The charge for the suitcases was %.2lf\n", luggageCost);
 	total = (basefare + luggageCost);
 	printf("The total cost for the trip was %.2lf\n", total);
+	if (total >= 2){
+		printf("Damn that trip costed at least %d McChickens\n", (int)total/2);
+	}
 }
