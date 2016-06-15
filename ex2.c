@@ -15,6 +15,7 @@ int main(){
 	total = (basefare + luggageCost);
 	printf("The total cost for the trip was %.2lf\n", total);
 	if (total >= 2){
-		printf("Damn that trip costed at least %d McChickens\n", (int)total/2);
+		printf("Damn that trip costed at least %d McChickens with %.2lf remaining in change\n",
+		 (int)total/2, fmod(total,2));
 	}
 }
